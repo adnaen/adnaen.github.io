@@ -436,7 +436,7 @@ section,
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .hero p span {
@@ -467,7 +467,11 @@ section,
   }
 
   .hero p {
-    font-size: 20px;
+    font-size: 30px;
+  }
+
+  .hero .social-links a{
+    font-size: 25px;
   }
 }
 
@@ -746,7 +750,7 @@ section,
 
 .contact .info-item h3 {
   padding: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -754,7 +758,7 @@ section,
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .contact .info-item:hover i {
@@ -894,14 +898,13 @@ padding: 20px;
 }
 
 .tech-stack{
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  background-color: #1bfd9b29;
-  color: #02b668 !important;
+  border-radius: 10px;
+  background-color: black;
+  color: white !important;
   text-align: center;
-  padding: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: 13px;
   font-style: normal;
   text-transform: capitalize;
@@ -917,16 +920,17 @@ padding: 20px;
 }
 
 .source-code {
-  font-size: 13px;
+  font-size: 22px;
   color: rgb(107, 103, 103);
   transition: color 0.3s ease;
   text-decoration: underline !important;
 }
-
-.source-code:hover {
-  color: #333;
+.source-code i {
+  color: rgb(107, 103, 103) !important;
+  transition: color 0.3s ease;
+}
+.source-code:hover, 
+.source-code:hover i {
+  color: white !important;
 }
 
-.source-code .devicon-github-plain {
-  color: #333 !important; 
-}
