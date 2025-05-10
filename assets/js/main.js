@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const imgSrc = div.dataset.imageSrc;
       if (imgSrc) {
         div.style.background = `
-          linear-gradient(to bottom, rgba(16,16,16,0.7), rgba(16,16,16,1)),
+          linear-gradient(to bottom, rgba(16,16,16,0.5), rgba(16,16,16,1)),
           url('${imgSrc}')
         `;
       }

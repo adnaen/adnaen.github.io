@@ -35,6 +35,8 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  padding-top: 40px;
+  padding-bottom: 150px;
 }
 
 a {
@@ -48,6 +50,10 @@ a:hover {
   /* color: color-mix(in srgb, var(--accent-color), transparent 25%); */
   color: white;
   text-decoration: underline;
+}
+
+p {
+  font-size: 15px;
 }
 
 h1,
@@ -81,31 +87,6 @@ h6 {
 }
 
 
-
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
-.footer {
-    border-top: 1px solid rgba(198, 195, 195, 0.633);
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    color: #7f8283;
-}
-
-.footer .copyright {
-    margin: 0;
-    font-size: 16px;
-}
-
-.footer strong {
-    color: var(--accent-color);
-}
-
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -197,44 +178,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
-.page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
-  position: relative;
-}
-
-.page-title h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.page-title .breadcrumbs ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-/*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
 section,
@@ -252,71 +195,14 @@ section,
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-/* .hero {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .hero #hero-bg {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-} */
-
-/* .hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-} */
-
-/* .hero .container {
-  position: relative;
-  z-index: 3;
-} */
-
-/* .hero h2 {
-  margin: 0;
-  font-size: 150px;
-  font-weight: 700;
-} */
-
-/* .hero p {
-  margin: 5px 0 0 0;
-  font-size: 30px;
-} */
-
 .hero-inner {
   max-width: 700px;
   width: 100%;
 }
 
 
-/* .hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
-} */
-
-/* .hero .social-links {
-  margin-top: 23px;
-} */
-
-
 .hero .social-links a {
-  font-size: 22px;
+  font-size: 20px;
   display: inline-block;
   color: color-mix(in srgb, var(--accent-color), transparent 10%);
   line-height: 1;
@@ -337,8 +223,8 @@ section,
     font-size: 23px;
   }
 
-  .hero .social-links a{
-    font-size: 20px;
+  .hero .social-links i{
+    font-size: 18px;
   }
 
   .hero img{
@@ -348,135 +234,14 @@ section,
 }
 
 /*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about .content h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Skills Section
---------------------------------------------------------------*/
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-item {
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    padding: 10px 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #ffffff;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.skill-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.skill-item i {
-    font-size: 24px;
-}
-
-/*--------------------------------------------------------------
-# Resume Section
---------------------------------------------------------------*/
-.resume .resume-title {
-  color: var(--heading-color);
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid var(--accent-color);
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: var(--background-color);
-  border: 2px solid var(--accent-color);
-}
-
-/*--------------------------------------------------------------
 # projects Section
 --------------------------------------------------------------*/
 .projects .project-item {
   background-color: var(--contrast-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
+  max-width: 370px;
+  width: 100%;
   padding: 16px;
   border-radius: 26px;
   text-align: center;
@@ -493,7 +258,6 @@ section,
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .projects .project-item .icon {
@@ -507,109 +271,8 @@ section,
   position: relative;
 }
 
-.projects .project-item .icon i {
-  font-size: 36px;
-  transition: 0.5s;
-  position: relative;
-}
-
-.projects .project-item .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.projects .project-item .icon svg path {
-  transition: 0.5s;
-  fill: color-mix(in srgb, var(--default-color), transparent 95%);
-}
-
-.projects .project-item h3 {
-  font-weight: 700;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-
-.projects .project-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
 .projects .project-item:hover {
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-.projects .project-item.item-cyan i {
-  color: #0dcaf0;
-}
-
-.projects .project-item.item-cyan:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
-}
-
-.projects .project-item.item-orange i {
-  color: #fd7e14;
-}
-
-.projects .project-item.item-orange:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-orange:hover .icon path {
-  fill: #fd7e14;
-}
-
-.projects .project-item.item-teal i {
-  color: #20c997;
-}
-
-.projects .project-item.item-teal:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-teal:hover .icon path {
-  fill: #20c997;
-}
-
-.projects .project-item.item-red i {
-  color: #df1529;
-}
-
-.projects .project-item.item-red:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-red:hover .icon path {
-  fill: #df1529;
-}
-
-.projects .project-item.item-indigo i {
-  color: #6610f2;
-}
-
-.projects .project-item.item-indigo:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-indigo:hover .icon path {
-  fill: #6610f2;
-}
-
-.projects .project-item.item-pink i {
-  color: #f3268c;
-}
-
-.projects .project-item.item-pink:hover .icon i {
-  color: #fff;
-}
-
-.projects .project-item.item-pink:hover .icon path {
-  fill: #f3268c;
 }
 
 /*--------------------------------------------------------------
@@ -804,20 +467,22 @@ padding: 20px;
   margin-bottom: 10px;
 }
 
-.source-code {
-  font-size: 22px;
-  color: rgb(107, 103, 103);
-  transition: color 0.3s ease;
-  text-decoration: none !important;
-}
 .source-code i {
   color: rgb(107, 103, 103) !important;
   transition: color 0.3s ease;
-  font-size: 30px;
+  font-size: 20px;
+  text-decoration: none;
 }
 .source-code:hover, 
 .source-code:hover i {
   color: white !important;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .source-code i {
+    font-size: 20px;
+  }
 }
 
 .text-dim-2 {
