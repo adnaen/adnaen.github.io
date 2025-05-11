@@ -62,9 +62,13 @@
 
   <body class="index-page">
     <main class="main">
+
       <section id="hero" class="hero section mb-3">
-        <div class="container d-flex justify-content-start">
-          <div class="hero-inner d-flex align-items-center">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between flex-wrap">
+            
+            <!-- Left: Profile Section -->
+            <div class="hero-inner d-flex align-items-center">
               <img
                 src="assets/img/favicon.png"
                 alt="Adnan"
@@ -72,12 +76,19 @@
                 style="width: 140px; height: 140px; object-fit: cover;"
               />
               <div>
-              <h4 class="mb-1">Muhammed Adnan</h4>
-              <h6 class="text-dim-1">Aspiring AI/ML Engineer</h6>
+                <h4 class="mb-1">Muhammed Adnan</h4>
+                <h6 class="text-dim-1">Aspiring AI/ML Engineer</h6>
+              </div>
             </div>
+
+            <!-- Right: CV Capsule -->
+            <div class="mb-3 mx-3 badge border border-secondary rounded-pill">
+              <a href="assets/resume.pdf" style="text-decoration: none;" class="text-dim-1">Resume ↗</a>
             </div>
           </div>
+        </div>
       </section>
+
 
       <section id="about" class="about section mb-4">
         <div class="container" data-aos="fade-up">
@@ -102,6 +113,7 @@
         </div>
         <div class="container " data-aos="fade-up" data-aos-delay="200">
           <!-- Work Experience Block -->
+          <!-- grey codes -->
           <div class="row mb-1">
             <h6 class="col-md-3 text-dim-2 fw-medium">Jan 2025 – Present</h6>
             <div class="col-md-8">
@@ -111,15 +123,32 @@
                 </a>
               </h6>
               <p class="mb-2">
-                Worked on full-stack development tasks using Django, ensuring timely delivery of projects.
-                Collaborated with team members to implement features and bug fixes across backend and frontend.
-                Utilized Git for version control and participated in code reviews to maintain code quality.
+                Contributed to the development of production-grade web applications used in the medical insurance domain. Developed a strong foundation in backend systems, API design, deployment, and software reliability.
             </p>
               <p class="text-dim-2">
                 Django • REST APIs • MySQL • CI/CD
               </p>
             </div>
           </div>
+
+          <!-- kinder -->
+          <div class="row mb-1 mt-3">
+            <h6 class="col-md-3 text-dim-2 fw-medium">Jan 2024 – Present</h6>
+            <div class="col-md-8">
+              <h6 class="mb-3">
+                <a href="https://www.linkedin.com/company/kinder-english-learning-club/posts/?feedView=all" target="_blank">
+                  Creative Lead – Kinder English Learning Club ↗
+                </a>
+              </h6>
+              <p class="mb-2">
+              As a Creative Lead, I am responsible for designing posters and flyers that capture the essence of the club’s branding. I focus on creating visually compelling materials that resonate with the target audience. Additionally, I offer strategic suggestions on best practices for content, ensuring consistency in messaging and visual style across all platforms.
+              </p>
+              <p class="text-dim-2">
+                Branding • Visual Design • Photoshop
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -150,7 +179,7 @@
                   href="http://medivalidator.in/"
                   class="source-code"
                   >
-                  <i class="bi bi-globe"></i>
+                  <i class="bi bi-globe" title="Visit the live project"></i>
                 </a>
                 <div class="tech-stack-wrapper">
                   <p class="text-dim-2 text-start">
@@ -182,7 +211,7 @@
                   href="https://github.com/adnaen/hotel-cancellation-prediction"
                   class="source-code"
                   >
-                  <i class="devicon-github-plain"></i>
+                  <i class="devicon-github-plain" title="View Code on GitHub"></i>
                 </a>
                 <div class="tech-stack-wrapper">
                   <p class="text-dim-2 text-start">
@@ -216,7 +245,7 @@
                     href=https://github.com/adnaen/customer-churn-prediction.git
                     class="source-code"
                   >
-                    <i class="devicon-github-plain"></i>
+                    <i class="devicon-github-plain" title="View Code on GitHub"></i>
                   </a>
                   <div class="tech-stack-wrapper">
                     <p class="text-dim-2 text-start">
@@ -249,7 +278,7 @@
                     href="https://github.com/adnaen/air-quality-index-analysis"
                     class="source-code"
                   >
-                    <i class="devicon-github-plain"></i>
+                    <i class="devicon-github-plain" title="View Code on GitHub"></i>
                   </a>
 
                 <div class="tech-stack-wrapper">
@@ -298,8 +327,8 @@
           <div class="row mb-2">
             <h6 class="col-md-3 text-dim-2 fw-medium">Email</h6>
             <h6 class="col-9">
-              <a href="mailto:adnan@example.com" class="contact-link">
-                etc.adnan@gmail.com ↗
+              <a href="mailto:adnanmuhammedadnancp@example.com" class="contact-link">
+                adnanmuhammedadnancp@gmail.com ↗
               </a>
             </h6>
           </div>
